@@ -1,6 +1,3 @@
-from operator import itemgetter
-
-
 studentlist=["Kasia","Basia","Marek","Darek"]
 studentlist.append("Józek")
 studentlist.sort()

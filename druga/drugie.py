@@ -1,1 +1,1 @@
-print((input("Podaj dowolne slowo a ja napisze je 30 razy: ")+"\n")*20)
+print((input("Podaj dowolne slowo a ja napisze je 30 razy: ")+"\n")*30)

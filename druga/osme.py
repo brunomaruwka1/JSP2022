@@ -1,3 +1,6 @@
-from ntpath import join
+from re import X
+
+
 lista=["r","o","w","e","r"]
-print("".join(lista))
+x="".join(lista)
+print(x)

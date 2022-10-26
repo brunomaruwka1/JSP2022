@@ -6,7 +6,7 @@ else:
     b = int(input("Podaj wartosc b: "))
     c = int(input("Podaj wartosc c: "))
     delta= float((b**2)-4*a*c)
-    if delta>1:    
+    if delta>0:    
         pp=(-b-(delta**(1/2)))/2*a
         dp=(-b+(delta**(1/2)))/2*a
         print("Pierwsze rozwiazanie to: ",pp,"drugie to: ",dp)
