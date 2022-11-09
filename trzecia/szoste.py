@@ -17,4 +17,3 @@ while x<=i:
     a= "  ".join(lista)
     print(a)
     x+=1
-
