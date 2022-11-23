@@ -10,5 +10,4 @@ for i in range(1,n+1):
     lista.append(wiersz)
 # print(lista)
 for b in lista: 
-    a="".join(str(b))     
-    print(" "*(n-lista.index(b)-1)+a)
+    print(" "*(n-lista.index(b)-1)+"".join(str(b)))
