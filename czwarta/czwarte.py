@@ -1,6 +1,5 @@
 def n_ty_wyrazcgeo(n,a1=1,q=2):
-    an=a1*q**(n-1)
-    return an
+    return a1*q**(n-1)
 
 #przykłady
 #a1=1, q=2, n=5
