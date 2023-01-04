@@ -1,0 +1,22 @@
+import SzyfrCezara;
+import time 
+
+n=1
+
+aktualnaData=time.localtime()
+data=time.strftime("%Y-%m-%d",aktualnaData)
+
+
+plik= open(f"plikzaszyfrowany{n}_{data}.txt","w")
+
+plik.write("To jest tekst do zaszyfrowania")
+
+plik.close()
+
+plik2=open("zaszyfrowane.txt","w")
+plik=open("plikzaszyfrowany.txt","r")
+
+plik2.write(SzyfrCezara.szyfrowanie(plik.read()))
+
+plik2.close()
+plik.close()
