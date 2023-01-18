@@ -25,13 +25,26 @@ plt.axis('tight')
 
 plt.subplot(1,3,2)
 t=np.linspace(0,2*czas,1000)
-y=Vy-g*t
-plt.plot(t,Vx*t,t,y)
+Vy=Vy-g*t
+Vx=[Vx for i in range(1000)]
+plt.plot(t,Vx,t,Vy)
 plt.xlabel('t[s]')
 plt.ylabel('y(t)[m]')
 plt.axis('tight')
-plt.show()
 
+
+plt.subplot(1,3,3)
+x=np.linspace(0,zasieg,1000)
+a=wysokosc/((0.5*zasieg-zasieg)*(0.5*zasieg))
+y=a*(x-zasieg)*x
+plt.plot(x,y)
+plt.xlabel('t[s]')
+plt.ylabel('y(t)[m]')
+plt.axis('tight')
+
+print(a)
+
+plt.show()
 
 
 
