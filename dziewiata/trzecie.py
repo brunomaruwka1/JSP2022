@@ -24,10 +24,18 @@ plt.axis('tight')
 
 
 plt.subplot(1,3,2)
-t=np.linspace(0,2*czas,1000)
-Vy=Vy-g*t
+czasy=[]
+t=np.linspace(1,8.16,1000)
+for i in t:
+    czasy.append(i)
+VY=[]
+for i in czasy:
+    if i <= czas:
+        VY.append(Vy-g*i)
+    if i > czas:
+        VY.append(g*(i-czas))
 Vx=[Vx for i in range(1000)]
-plt.plot(t,Vx,t,Vy)
+plt.plot(t,Vx,t,VY)
 plt.xlabel('t[s]')
 plt.ylabel('y(t)[m]')
 plt.axis('tight')
